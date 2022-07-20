@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-int main(void) {
-    printf("hello c!\n");
-    return 0;
+void print_hello(const char *message) {
+    printf("%s\n", message);
 }
