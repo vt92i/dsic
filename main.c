@@ -7,20 +7,15 @@ int main(void) {
     int ok;
 
     node *n = malloc(sizeof(node));
-    ok = ll_init(n, 2);
-    (ok) ? ll_print(*n) : printf("error: ll_init() failed\n");
 
-    printf("node1->ptr: %p\n", n);
-    printf("node1->data: %d\n", n->data);
-    printf("node1->prev: %p\n", n->prev);
-    printf("node1->next: %p\n", n->next);
+    ok = ll_init(n, 7);
+    if (!ok) {
+        printf("error: ll_init() failed\n");
+        return 1;
+    }
 
-    printf("\n");
-
-    printf("node2->ptr: %p\n", n->next);
-    printf("node2->data: %d\n", n->next->data);
-    printf("node2->prev: %p\n", n->next->prev);
-    printf("node2->next: %p\n", n->next->next);
+    ll_print(*n);
+    ll_reverse_print(*n);
 
     free(n);
 

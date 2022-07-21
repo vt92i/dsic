@@ -38,5 +38,18 @@ void ll_print(node target) {
 }
 
 void ll_reverse_print(node target) {
-    // TODO: implement ll_reverse_print()
+    node *n = &target;
+    while (n->next != NULL) {
+        n = n->next;
+    }
+    while (n != NULL) {
+        printf("%d", n->data);
+        if (n->prev != NULL) {
+            printf(" -> ");
+            n = n->prev;
+            continue;
+        }
+        n = NULL;
+    }
+    printf("\n");
 }
