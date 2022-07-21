@@ -11,9 +11,11 @@ int ll_init(node *target, int size) {
     node *n = target;
     for (int i = 1; i <= size; i++) {
         n->data = i;
+        // n->prev = NULL;
         n->next = NULL;
         if (i != size) {
             n->next = malloc(sizeof(node));
+            n->next->prev = n;
             n = n->next;
         }
     }
@@ -33,4 +35,8 @@ void ll_print(node target) {
         n = NULL;
     }
     printf("\n");
+}
+
+void ll_reverse_print(node target) {
+    // TODO: implement ll_reverse_print()
 }

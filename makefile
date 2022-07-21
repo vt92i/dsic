@@ -5,7 +5,7 @@ src_files = linked_list.c main.c
 target = main
 
 main:
-	$(CC) $(CFLAGS) $(src_files) -o $(target)
+	$(CC) $(CFLAGS) -g $(src_files) -o $(target)
 
 clean:
 	rm -f $(target)

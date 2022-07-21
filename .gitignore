@@ -1,2 +1,9 @@
-.vscode/
+# vscode
+.vscode/*
+!.vscode/launch.json
+!.vscode/run.sh
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# binary file 
 main
