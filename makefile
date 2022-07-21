@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -std=c17
 
-src_files = hello.c main.c
+src_files = linked_list.c main.c
 target = main
 
 main:
