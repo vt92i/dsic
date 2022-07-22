@@ -5,7 +5,7 @@
             "type": "cppdbg",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/main",
+            "program": "${workspaceFolder}/dsic",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

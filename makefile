@@ -1,11 +1,14 @@
 CC = gcc
-CFLAGS = -Wall -std=c17
+CFLAGS = -Wall -Wextra -std=c17 -g
 
-src_files = linked_list.c main.c
-target = main
+header_files = $(wildcard *.h)
+src_files = $(wildcard *.c)
+output = dsic
 
-main:
-	$(CC) $(CFLAGS) -g $(src_files) -o $(target)
+all: dsic
+
+dsic: $(header_files) $(src_files)
+	$(CC) $(CFLAGS) $(src_files) -o $(output)
 
 clean:
-	rm -f $(target)
+	rm -f $(output)

@@ -5,9 +5,6 @@
             "label": "build",
             "group": "build",
             "command": "make",
-            "args": [
-                "-B"
-            ],
             "presentation": {
                 "echo": true,
                 "reveal": "always",

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-make -B &&
+make &&
 echo -e "\n" &&
-./main
+./dsic
